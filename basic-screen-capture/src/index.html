@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'"
+    />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <video id="video" width="640" height="480" muted></video>
+          <h1 id="status" class="hide">Recording...</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-auto d-flex gap-2">
+          <button id="start" class="btn btn-primary">start</button>
+          <button id="stop" class="btn btn-primary">stop</button>
+          <button id="reset" class="btn btn-primary">reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./render.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
